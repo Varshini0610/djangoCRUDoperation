@@ -1,0 +1,19 @@
+# Virtual environment
+myvenv/
+pyvenv/
+Lib/
+Include/
+Scripts/
+pyvenv.cfg
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# DB
+*.sqlite3
+
+# Editor settings
+.vscode/
+.env
+.DS_Store
