@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <table>
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type='text' name='name' value="{{all.name}}"></td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type='number' name='age' value="{{all.age}}"></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type='email' name='email' value="{{all.email}}"></td>
+            </tr>
+            <tr>
+                <td><label>Department:</label></td>
+                <td><input type='text' name='dept' value="{{all.dept}}"></td>
+            </tr>
+            <tr>
+                <td><input type='submit'></td>
+            </tr>
+        </table>
+    
+    </form>
+</body>
+</html>
